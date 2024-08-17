@@ -8,9 +8,7 @@ export const AppProvider = ({ children }) => {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
     const [userInfo, setUserInfo] = useState({ name: "", email: "", id: "" });
-    const [currentSong, setCurrentSong] = useState(
-        "https://pagalfree.com/musics/128-Agar%20Tum%20Saath%20Ho%20-%20Tamasha%20128%20Kbps.mp3",
-    );
+    const [currentSong, setCurrentSong] = useState("");
     const [playlists, setPlaylists] = useState([]);
     const [songs, setSongs] = useState([]);
 
